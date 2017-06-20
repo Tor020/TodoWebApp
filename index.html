@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+
+
+
+
+
+<!--Todo
+
+    Finish Watch and code portion of app completion
+    Begin adding new resume to websites
+    Update Todo application to be more userfriendly and displayable 
+    Ensure understanding of all components of application
+
+
+    ****Update Resume***
+
+    *****After resume update submit to recruiter email****
+
+    ***Begin Work on New portfolio Website***
+
+
+
+-->
+
+
+
+
+
+
+
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script type="text/javascript" src="http://livejs.com/live.js"></script>
+  <title>Model View Controller</title>
+</head>
+
+<body>
+
+  <h1>To do List</h1>
+  <div class="space">
+  </div>
+
+  <div class='space'>
+    <input autofocus type='text' id='txtInput'></input>
+    <button onclick='handlers.addTodo()'>Add Todo </button>
+
+  </div>
+  <div class='space'>
+
+    <input id='chaI' type="number" step='1' value='0' placeholder='Index to change'>
+    <input id='chaT' type='text' placeholder="Changed Text">
+    <button onclick='handlers.changeTodo()'>Change Todo</button>
+  </div>
+
+  <div class="space">
+    <input id='compI' type="number" value='0' placeholder='Index to Complete'>
+    <button onclick='handlers.completeTodo()'>Complete Todo</button>
+  </div>
+  <div class="space">
+    <button onclick='handlers.toggleAll()'>Complete All Todo Items</button>
+  </div>
+
+  <hr>
+  <ul>
+  </ul>
+  <script src='main.js'></script>
+
+</body>
+
+</html>
